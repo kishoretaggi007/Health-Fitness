@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.personal.myapplication2.Common_tab">
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:max="500"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        />
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/play"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/play"
+        android:layout_below="@+id/pb"
+        />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/pause"
+        android:layout_alignTop="@+id/cal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/pause"
+        android:visibility="invisible"
+        android:layout_below="@+id/pb"></ImageButton>
+
+ <TextView
+        android:text="Calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/play"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/cal"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:text="Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/dist"
+        android:textSize="16dp"
+        android:layout_below="@+id/pause"
+        android:layout_alignStart="@+id/cal"
+        />
+    <TextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pause"
+        android:layout_toEndOf="@+id/pb"
+        android:layout_marginStart="23dp"
+        android:textSize="16dp"
+        android:id="@+id/time"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/play"
+        android:layout_alignStart="@+id/cal"
+        android:id="@+id/calr"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dist"
+        android:layout_toEndOf="@+id/calr"
+        android:layout_marginTop="13dp"
+        android:id="@+id/distr"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/play"
+        android:layout_alignEnd="@+id/time"
+        android:id="@+id/timer"
+        />
+
+</RelativeLayout>

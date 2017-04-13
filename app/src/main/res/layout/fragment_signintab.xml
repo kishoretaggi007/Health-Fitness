@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.personal.myapplication2.Signintab">
+    <TextView
+        android:text="Welcome User!!!"
+        android:id="@+id/textView"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_width="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/siuname"
+        android:hint="Username"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+
+        android:layout_above="@+id/sipass"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="10dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/sipass"
+        android:hint="Password"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:layout_above="@+id/proceed"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:text="Sign in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceed"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
